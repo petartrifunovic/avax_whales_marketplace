@@ -1,0 +1,49 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.3rem 3.7rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.4rem;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &--primary {
+    background-image: linear-gradient(
+      to right top,
+      var(--color-primary),
+      var(--color-primary-dark)
+    );
+    color: var(--color-grey-light-1);
+
+    &:hover {
+      background-image: linear-gradient(
+        to right top,
+        var(--color-primary-dark),
+        var(--color-primary)
+      );
+    }
+  }
+
+  &--secondary {
+    background-color: var(--color-tertiary);
+    color: var(--color-grey-light-1);
+  }
+
+  &--price {
+    font-weight: 800;
+  }
+}

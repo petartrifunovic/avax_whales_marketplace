@@ -1,0 +1,26 @@
+//Colors
+:root {
+  //Colors
+  --color-primary: #e03b3c;
+  --color-primary-dark: #bd2c2d;
+  --color-primary-light: #ffc4c4;
+  --color-primary-light-2: #f69b9b;
+
+  --color-grey-light-1: #f7f7f7;
+  --color-grey-light-2: #e6e6e6;
+
+  --color-grey-dark-1: #262626;
+  --color-grey-dark-2: #0d0d0d;
+
+  --color-white: #fff;
+
+  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+  --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+
+  //Shadow
+  --box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  --box-shadow-dark: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+
+  //Font
+  --default-font-size: 1.7rem;
+}

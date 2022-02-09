@@ -1,0 +1,61 @@
+.form {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+
+  @include respond(tab-land) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+
+  @include respond(phone-big) {
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+  }
+
+  &__group {
+    text-align: left;
+  }
+
+  &__select {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    width: 100%;
+    height: 4rem;
+    padding: 0 10rem 0 1rem;
+    background: url('https://i.ibb.co/rfPGg1Y/arrow-down.png') no-repeat right
+        1.7rem center / 1.5rem,
+      linear-gradient(
+        to left,
+        var(--color-grey-dark-1) 3em,
+        var(--color-primary-light-2) 3em
+      );
+    color: var(--color-primary-dark-1);
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      background-color: var(--color-primary);
+    }
+
+    &:focus option {
+      color: var(--color-grey-light-1);
+    }
+
+    /* Remove IE arrow */
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  &__select-option {
+    color: inherit;
+    background-color: var(--color-primary-light-1);
+  }
+}

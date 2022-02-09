@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <!--FontAwesome Free-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="section">
+
+      <!--Filters-->
+      <h3 class="heading-secondary"><i class="fas fa-filter"></i> Attribute Filters</h3>
+      <form action="#" class="form">
+        <div class="form__group">
+          <select class="form__select" name="avatar-sort">
+            <option>Sort</option>
+            <option value="1">Sort by 1</option>
+            <option value="2">Sort by 2</option>
+            <option value="3">Sort by 3</option>
+          </select>
+        </div>
+      
+        <div class="form__group">
+          <select class="form__select" name="avatar-tier">
+            <option>Tier</option>
+            <option value="1">Tier 1</option>
+            <option value="2">Tier 2</option>
+            <option value="3">Tier 3</option>
+          </select>
+        </div>
+      
+        <div class="form__group">
+          <select class="form__select" name="avatar-body">
+            <option>Body</option>
+            <option value="2021">Body 1</option>
+            <option value="2020">Body 2</option>
+            <option value="2019">Body 3</option>
+          </select>
+        </div>
+      
+        <div class="form__group">
+          <select class="form__select" name="avatar-head">
+            <option>Head</option>
+            <option value="2021">Head 1</option>
+            <option value="2020">Head 2</option>
+            <option value="2019">Head 3</option>
+          </select>
+        </div>
+      
+        <div class="form__group">
+          <select class="form__select" name="avatar-whale">
+            <option>Whale</option>
+            <option value="2021">Whale 1</option>
+            <option value="2020">Whale 2</option>
+            <option value="2019">Whale 3</option>
+          </select>
+        </div>
+      
+        <div class="form__group">
+          <select class="form__select" name="avatar-mouth">
+            <option>Mouth</option>
+            <option value="2021">Mouth 1</option>
+            <option value="2020">Mouth 2</option>
+            <option value="2019">Mouth 3</option>
+          </select>
+        </div>
+      
+        <div class="form__group">
+          <select class="form__select" name="avatar-eyes">
+            <option>Eyes</option>
+            <option value="2021">Eyes 1</option>
+            <option value="2020">Eyes 2</option>
+            <option value="2019">Eyes 3</option>
+          </select>
+        </div>
+      </form>
+ 
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="
+              btn
+              operations__tab operations__tab--1 operations__tab--active
+            "
+            data-tab="1"
+          >
+            <span>Market</span>
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>My Wallet</span>
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>My Market</span>
+          </button>
+        </div>
+
+        <!--Operation 1-->
+        <div
+          class="
+            operations__content
+            operations__content--1
+            operations__content--active
+          "
+        >
+          <!--Avax Info Popup-->
+          <div class="avax-info hidden">
+              <i class="fas fa-times avax-info__close-btn"></i>
+              <img src="https://i.ibb.co/54YWhf7/2946.png" alt="Avax Whale" class="avax-info__img">
+              <div class="avax-info__content-box">
+                  <h2 class="avax-info__title">Avax Whale<span class="avax-info__symbol">#1567</span></h2>
+
+                  <ul class="avax-info__attributes">
+                      <li class="avax-info__attributes-item">Tier:<span class="avax-info__attributes-value">Value 1</span></li>
+                      <li class="avax-info__attributes-item">Head:<span class="avax-info__attributes-value">Value 1</span></li>
+                      <li class="avax-info__attributes-item">Mouth<span class="avax-info__attributes-value">Value 1</span></li>
+                      <li class="avax-info__attributes-item">Eyes:<span class="avax-info__attributes-value">Value 1</span></li>
+                      <li class="avax-info__attributes-item">Whale:<span class="avax-info__attributes-value">Value 1</span></li>
+                      <li class="avax-info__attributes-item">Body:<span class="avax-info__attributes-value">Value 1</span></li>
+                      <li class="avax-info__attributes-item">Last:<span class="avax-info__attributes-value">Value 1</span></li>
+                  </ul>
+                  <button class="btn btn--primary">Create Listing</button>
+              </div>
+          </div>
+
+          <div class="avax-info__overlay hidden">&nbsp;</div>
+
+          <div class="avax-container">
+            <!--Avax Goes Here-->
+          </div>
+        </div>
+
+        <!--Operation 2-->
+        <div class="operations__content operations__content--2">
+          
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nulla aliquid voluptatem dolor ullam reiciendis assumenda iure, debitis in blanditiis enim atque quas vel odit non pariatur, neque aperiam ut.</p>
+        </div>
+
+        <!--Operation 3-->
+        <div class="operations__content operations__content--3">
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eligendi omnis pariatur facere dolor sunt ex necessitatibus nam deserunt vitae modi quos deleniti at a ut! Iure explicabo aut soluta!</p>
+            
+        </div>
+      </div>
+
+      <!--Pagination-->
+      <ul class="pagination">
+        <li class="pagination__item"><a class="previous__btn" tabindex="0" role="button" aria-disabled="false" aria-label="Previous page" rel="prev">Previous</a></li>
+        <li class="pagination__item"><a class="pagination__btn" role="button" tabindex="0" aria-label="Page 1">1</a></li>
+        <li class="pagination__item pagination__item--active"><a class="pagination__btn" role="button" tabindex="0" aria-label="Page 2 is your current page" aria-current="page">2</a></li>
+        <li class="pagination__item"><a class="pagination__btn" role="button" tabindex="0" aria-label="Page 3">3</a></li>
+        <li class="pagination__item"><a class="pagination__btn" role="button" tabindex="0" aria-label="Page 4">4</a></li>
+        <li class="pagination__item"><a class="break__btn" role="button" tabindex="0">...</a></li>
+        <li class="pagination__item"><a class="pagination__btn" role="button" tabindex="0" aria-label="Page 35">35</a></li>
+        <li class="pagination__item"><a class="pagination__btn" role="button" tabindex="0" aria-label="Page 36">36</a></li>
+        <li class="pagination__item"><a class="next__btn" tabindex="0" role="button" aria-disabled="false" aria-label="Next page" rel="next">Next</a></li>
+      </ul>
+
+    </section>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+/* GENERAL ELEMENTS */
+.section {
+  padding: 6rem 3rem;
+  width: 136.6rem;
+  background-color: var(--color-grey-light-1);
+  transition: transform 1s, opacity 1s;
+
+  @include respond(tab-land) {
+    width: 100%;
+  }
+
+  @include respond(tab-port) {
+    padding: 6rem 1rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
